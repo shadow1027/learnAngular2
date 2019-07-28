@@ -1,0 +1,14 @@
+
+<div *ngIf="detailsData" 
+    style="border: 1px solid #000"
+>
+    <h3>我是英雄详情模块</h3>
+    <span>id:{{detailsData.id}}</span>
+    <div>
+        <label for="">
+                name:
+                <input [(ngModel)]="detailsData.name">
+        </label>
+    </div>
+    <button (click)="goBack()">退出</button>
+</div>

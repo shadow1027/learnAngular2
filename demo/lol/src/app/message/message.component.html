@@ -1,0 +1,12 @@
+<div
+    style="border: 1px solid green"
+    *ngIf="serve.msg.length"
+>
+    <h4>我是消息板块，我的serve注入到totalserve中了</h4>
+    <button
+        (click)="serve.clear()"
+    >清除消息</button>
+    <div *ngFor="let attr of serve.msg">
+        {{attr}}
+    </div>
+</div>

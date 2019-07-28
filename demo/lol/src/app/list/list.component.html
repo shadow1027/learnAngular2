@@ -1,0 +1,18 @@
+<div
+    style="border: 1px solid red;"
+>
+    <h2>我是英雄列表模块</h2>
+    <ul>
+        <li
+            *ngFor="let attr of totalData"
+            style="list-style: none;"
+            
+        >
+            <a routerLink="/detail/{{attr.id}}">
+                <span>{{attr.id}}</span>&nbsp;&nbsp;
+                <span>{{attr.name}}</span>
+            </a>
+        </li>
+    </ul>
+    
+</div>

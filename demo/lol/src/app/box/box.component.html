@@ -1,0 +1,22 @@
+<div 
+    style="border: 1px solid blue;
+    overflow: hidden;"
+>
+    <h2>我是盒子展示英雄模块</h2>
+    <a 
+        *ngFor="let attr of boxData"
+        routerLink="/detail/{{attr.id}}">
+        <div
+        style="background: skyblue;
+        width: 100px;
+        height: 100px;
+        color:#fff;
+        margin-right: 10px;
+        float:left;
+        text-align: center;
+        line-height: 100px;
+        "
+        
+        >{{attr.name}}</div>
+    </a>
+</div>
