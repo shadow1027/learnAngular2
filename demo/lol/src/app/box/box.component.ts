@@ -12,7 +12,7 @@ export class BoxComponent implements OnInit {
 
   ngOnInit() {
     this.getBoxData();
-    console.log(this.boxData)
+    // console.log(this.boxData)
   }
   getBoxData(){
     this.serve.getData()

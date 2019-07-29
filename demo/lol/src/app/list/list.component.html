@@ -11,8 +11,20 @@
             <a routerLink="/detail/{{attr.id}}">
                 <span>{{attr.id}}</span>&nbsp;&nbsp;
                 <span>{{attr.name}}</span>
-            </a>
+            </a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button
+                (click)="delete(attr)"
+            >删除英雄</button>
         </li>
     </ul>
-    
+    <!-- 增加英雄 -->
+    <div>
+        <h2>我是增加英雄的</h2>
+        <label >英雄名字
+            <input type="text" #heroName>
+        </label>
+        <button (click)="add(heroName.value);heroName.value=''">
+            add英雄
+        </button>
+    </div>
 </div>

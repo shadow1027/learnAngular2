@@ -33,4 +33,8 @@ export class DetailsComponent implements OnInit {
   goBack(){
     this.location.back();
   }
+  save():void{
+    this.serve.updateList(this.detailsData)
+    .subscribe(()=>this.goBack());
+  }
 }
